@@ -1,0 +1,46 @@
+HTML Structure:
+<!DOCTYPE html>: Declares the document type and version of HTML being used.
+<html lang="en">: The root element of the HTML document, indicating the language as English.
+<head>: Contains meta-information about the HTML document, such as character encoding, viewport settings, title, and links to external resources.
+<meta charset="UTF-8">: Specifies the character encoding for the document as UTF-8.
+<meta name="viewport" content="width=device-width, initial-scale=1.0">: Sets the viewport width to the device width and initial zoom level to 1.
+<title>: Sets the title of the document.
+External CSS and JavaScript files are linked here using <link> and <script> tags.
+<body>: Contains the visible content of the HTML document.
+<main>: Represents the main content of the document.
+<section class="quiz">: Defines a section for the quiz content.
+.heading: Contains the title and subtitle of the quiz.
+.result: Area to display quiz results.
+.quiz-form: Form element containing quiz questions.
+.question: Individual question sections.
+Each question consists of a question statement and multiple options as radio buttons.
+.submit: Section containing the submit button for the quiz form.
+
+CSS Styles:
+@import: Imports external fonts and Bootstrap icons.
+*: Applies CSS styles to all elements, setting margin, padding, box-sizing, font-size, font-family, text-decoration, and list-style.
+.quiz: Styles for the quiz section, including background color and padding.
+.heading: Styles for the heading section, including margin, font size, color, and text alignment.
+.result: Styles for the result section, including text alignment, width, background color, border-radius, font size, and box-shadow.
+.hide: Hides elements with the specified class using display: none.
+.reload button: Styles for the "Try Again" button, including background color, padding, border, width, and hover effect.
+.quiz-form: Styles for the quiz form, including max-width and margin.
+.question: Styles for individual questions, including background color, padding, border-radius, margin, and box-shadow.
+.submit: Styles for the submit button section, including text alignment and margin.
+.submit input: Styles for the submit button, including background color, padding, color, font size, border-radius, box-shadow, border, and hover effect.
+
+JavaScript:
+The JavaScript code at the bottom of the document handles form submission and calculates the quiz score.
+It listens for the form submission event, prevents the default form submission behavior, and then calculates the score based on user-selected answers.
+After calculating the score, it displays the result, highlighting correct and incorrect answers, and showing the score out of 5.
+It uses DOM manipulation to add classes for correct and incorrect answers, and to display the result section.
+scrollTo(0,0): Scrolls the page to the top when displaying the quiz result.
+classList.add(): Adds CSS classes to elements to apply styling changes based on quiz results.
+
+Bootstrap and onclick used:
+
+ <p class="reload">
+                <button onclick="document.location.reload()" class="btn btn-primary font-monospace" data-bs-toggle="tooltip" data-bss-tooltip=""
+                        data-bss-hover-animate="wobble" type="button" title="check your results">Try Again?
+                </button>
+            </p>
